@@ -1,0 +1,183 @@
+{
+  "package": "meyveli-xox-ui-assets",
+  "version": "1.0.0",
+  "format": "WebP",
+  "textFree": true,
+  "transparency": "Every component has a real alpha channel and transparent outer canvas. background.webp is intentionally opaque because it is the full-screen backdrop.",
+  "palette": {
+    "cyan": "#45E7EE",
+    "blue": "#4198EF",
+    "purple": "#6544DC",
+    "coral": "#F04A5B",
+    "gold": "#FFB323",
+    "panel": "#FAFFFF"
+  },
+  "recommendedUsage": {
+    "background": "cover",
+    "scalablePanels": "CSS background-size: 100% 100% or border-image",
+    "icons": "contain",
+    "board": "Render the 10x10 cell grid in HTML/CSS; use board-frame.webp around it."
+  },
+  "assets": [
+    {
+      "file": "assets/ui/background.webp",
+      "transparentBackground": false
+    },
+    {
+      "file": "assets/ui/decorations-overlay.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/hud-panel.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/progress-frame.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/board-frame.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/toolbar.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/modal-panel.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/result-panel.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/button-purple.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/button-cyan.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/button-coral.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/button-gold.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/button-icon-round.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/player-panel-red.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/player-panel-yellow.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/cell.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/cell-hover.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/cell-winning.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/marker-apple.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/marker-banana.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/back.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/restart.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/fullscreen.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/home.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/wrench.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/trash.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/faucet.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/sound.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/sound-off.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/settings.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/close.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/help.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/trophy.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/robot.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/apple.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/icons/banana.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/decorations/cloud.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/decorations/leaf-left.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/decorations/leaf-right.webp",
+      "transparentBackground": true
+    },
+    {
+      "file": "assets/ui/decorations/sparkle.webp",
+      "transparentBackground": true
+    }
+  ]
+}
