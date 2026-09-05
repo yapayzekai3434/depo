@@ -1,0 +1,81 @@
+:root {
+  --game-cream: #fff7df;
+  --game-ink: #243457;
+  --game-red: #ff4352;
+  --game-blue: #1689f5;
+  --game-cyan: #13d6e4;
+  --game-purple: #a34bf3;
+  --game-green: #38df75;
+  --game-yellow: #ffd91f;
+  --game-orange: #ff922b;
+}
+
+.game-theme {
+  min-height: 100dvh;
+  color: var(--game-ink);
+  background: url("./background.webp") center / cover no-repeat;
+}
+
+.ui-skin {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ui-hud { background-image: url("./hud-panel.webp"); }
+.ui-progress-frame { background-image: url("./progress-frame.webp"); }
+.ui-board-frame { background-image: url("./board-frame.webp"); }
+.ui-toolbar { background-image: url("./toolbar.webp"); }
+.ui-title-panel { background-image: url("./title-panel.webp"); }
+.ui-menu-panel { background-image: url("./menu-panel.webp"); }
+.ui-question-red { background-image: url("./question-panel-red.webp"); }
+.ui-question-blue { background-image: url("./question-panel-blue.webp"); }
+
+.game-button {
+  appearance: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font: 800 clamp(1rem, 2vw, 1.5rem) / 1.1 system-ui, sans-serif;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: transform 140ms ease, filter 140ms ease;
+}
+
+.game-button:hover { filter: brightness(1.06); }
+.game-button:active { transform: translateY(3px) scale(0.98); }
+.game-button--purple { background-image: url("./button-purple.webp"); }
+.game-button--cyan { background-image: url("./button-cyan.webp"); }
+.game-button--red { background-image: url("./button-red.webp"); }
+.game-button--blue { background-image: url("./button-blue.webp"); }
+.game-button--green { background-image: url("./button-green.webp"); }
+.game-button--yellow { background-image: url("./button-yellow.webp"); color: var(--game-ink); }
+.game-button--orange { background-image: url("./button-orange.webp"); }
+.game-button--neutral { background-image: url("./button-neutral.webp"); color: var(--game-ink); }
+
+.icon-button {
+  appearance: none;
+  width: clamp(48px, 8vw, 76px);
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon-button > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.progress-fill--red { background-image: url("./status/progress-fill-red.webp"); }
+.progress-fill--blue { background-image: url("./status/progress-fill-blue.webp"); }
+
+@media (prefers-reduced-motion: reduce) {
+  .game-button { transition: none; }
+}
+

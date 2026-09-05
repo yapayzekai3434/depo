@@ -1,0 +1,62 @@
+{
+  "name": "halat-cekme-colorful-ui",
+  "version": "2.0.0",
+  "format": "webp",
+  "pngFallbackRoot": "png/",
+  "transparentUiAssets": true,
+  "textEmbedded": false,
+  "assets": {
+    "background": { "file": "background.webp", "width": 1024, "height": 1536, "alpha": false },
+    "panels": [
+      { "file": "hud-panel.webp", "width": 1010, "height": 277 },
+      { "file": "progress-frame.webp", "width": 941, "height": 190 },
+      { "file": "board-frame.webp", "width": 640, "height": 548 },
+      { "file": "toolbar.webp", "width": 942, "height": 313 },
+      { "file": "title-panel.webp", "width": 943, "height": 316 },
+      { "file": "menu-panel.webp", "width": 538, "height": 528 },
+      { "file": "question-panel-red.webp", "width": 607, "height": 563 },
+      { "file": "question-panel-blue.webp", "width": 606, "height": 564 }
+    ],
+    "buttons": [
+      "button-purple.webp",
+      "button-cyan.webp",
+      "button-red.webp",
+      "button-blue.webp",
+      "button-green.webp",
+      "button-yellow.webp",
+      "button-orange.webp",
+      "button-neutral.webp"
+    ],
+    "icons": [
+      "icons/back.webp",
+      "icons/restart.webp",
+      "icons/fullscreen.webp",
+      "icons/home.webp",
+      "icons/wrench.webp",
+      "icons/trash.webp",
+      "icons/faucet.webp",
+      "icons/play.webp",
+      "icons/pause.webp",
+      "icons/settings.webp",
+      "icons/sound.webp",
+      "icons/mute.webp",
+      "icons/users.webp",
+      "icons/cpu.webp",
+      "icons/trophy.webp",
+      "icons/help.webp"
+    ],
+    "status": [
+      "status/progress-fill-red.webp",
+      "status/progress-fill-blue.webp",
+      "status/team-badge-red.webp",
+      "status/team-badge-blue.webp",
+      "status/success-badge.webp",
+      "status/error-badge.webp"
+    ],
+    "decor": [
+      "decor/center-ribbon.webp",
+      "decor/rope.webp"
+    ],
+    "preview": "preview/ui-showcase.webp"
+  }
+}

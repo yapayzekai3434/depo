@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI Şeffaflık Kontrolü</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; color: #223252; background: #eef7ff; }
+    h1 { margin: 0 0 8px; }
+    p { margin: 0 0 24px; }
+    main { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+    figure { margin: 0; padding: 12px; border-radius: 16px; background: #fff; box-shadow: 0 8px 22px #4562a21a; }
+    .checker {
+      min-height: 150px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background-color: #fff;
+      background-image:
+        linear-gradient(45deg, #b7c5d6 25%, transparent 25%),
+        linear-gradient(-45deg, #b7c5d6 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #b7c5d6 75%),
+        linear-gradient(-45deg, transparent 75%, #b7c5d6 75%);
+      background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+      background-size: 24px 24px;
+    }
+    img { display: block; width: 100%; max-width: 220px; max-height: 150px; object-fit: contain; }
+    figcaption { margin-top: 8px; font-size: 12px; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <h1>UI Şeffaflık Kontrolü</h1>
+  <p>Dama deseni görselin çevresinden görünüyorsa alfa şeffaflığı çalışıyor demektir.</p>
+  <main id="gallery"></main>
+  <script>
+    const assets = [
+      "board-frame.webp", "hud-panel.webp", "progress-frame.webp", "toolbar.webp",
+      "title-panel.webp", "menu-panel.webp", "question-panel-red.webp", "question-panel-blue.webp",
+      "button-purple.webp", "button-cyan.webp", "button-red.webp", "button-blue.webp",
+      "button-green.webp", "button-yellow.webp", "button-orange.webp", "button-neutral.webp",
+      "decor/center-ribbon.webp", "decor/rope.webp",
+      "status/progress-fill-red.webp", "status/progress-fill-blue.webp",
+      "status/team-badge-red.webp", "status/team-badge-blue.webp",
+      "status/success-badge.webp", "status/error-badge.webp",
+      "icons/back.webp", "icons/restart.webp", "icons/fullscreen.webp", "icons/home.webp",
+      "icons/wrench.webp", "icons/trash.webp", "icons/faucet.webp", "icons/play.webp",
+      "icons/pause.webp", "icons/settings.webp", "icons/sound.webp", "icons/mute.webp",
+      "icons/users.webp", "icons/cpu.webp", "icons/trophy.webp", "icons/help.webp"
+    ];
+    const gallery = document.querySelector("#gallery");
+    for (const path of assets) {
+      const figure = document.createElement("figure");
+      const checker = document.createElement("div");
+      const image = document.createElement("img");
+      const caption = document.createElement("figcaption");
+      checker.className = "checker";
+      image.src = `assets/ui/${path}`;
+      image.alt = "";
+      caption.textContent = path;
+      checker.append(image);
+      figure.append(checker, caption);
+      gallery.append(figure);
+    }
+  </script>
+</body>
+</html>
